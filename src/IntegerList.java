@@ -49,7 +49,7 @@ public class IntegerList extends List {
         return list.toString();
     }
 
-    public static void main(int[] args) {
+    public static void main(String[] args) {
         Scanner stdin = new Scanner(System.in);
         System.out.println("Enter a list of integers, followed by any letter");
         IntegerList list = new IntegerList();
