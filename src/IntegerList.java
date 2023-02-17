@@ -103,6 +103,7 @@ public class IntegerList extends List {
         System.out.println("Your list is " + list.toString());
         System.out.println("The sum is " + list.getSum());
         System.out.println("The product is " + list.getProduct());
+        System.out.println("The reverse of your list is " + list.getReverse().toString());
 
     }
 }
