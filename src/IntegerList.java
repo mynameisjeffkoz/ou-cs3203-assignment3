@@ -52,6 +52,13 @@ public class IntegerList extends List {
         return acc;
     }
 
+    public int getProduct() {
+        int acc = 1;
+        for (int num:list)
+            acc *= num;
+        return acc;
+    }
+
     /**
      * Returns a String representation of the IntegerList
      * @return a String
@@ -71,6 +78,7 @@ public class IntegerList extends List {
         stdin.close();
         System.out.println("Your list is " + list.toString());
         System.out.println("The sum is " + list.getSum());
+        System.out.println("The product is " + list.getProduct());
 
     }
 }
