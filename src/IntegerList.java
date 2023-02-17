@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class IntegerList extends List {
 
     /**
-     * An ArrayList which stores the Integer values in the NumberList
+     * An ArrayList which stores the Integer values in the IntegerList
      */
     ArrayList<Integer> list;
 
@@ -42,6 +42,17 @@ public class IntegerList extends List {
     }
 
     /**
+     * Get the sum of all the values in the IntegerList
+     * @return the sum of the IntegerList
+     */
+    public int getSum() {
+        int acc = 0;
+        for (int num:list)
+            acc += num;
+        return acc;
+    }
+
+    /**
      * Returns a String representation of the IntegerList
      * @return a String
      */
@@ -57,7 +68,9 @@ public class IntegerList extends List {
             list.add(stdin.nextInt());
         }
         stdin.nextLine();
+        stdin.close();
         System.out.println("Your list is " + list.toString());
+        System.out.println("The sum is " + list.getSum());
 
     }
 }
