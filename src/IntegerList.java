@@ -63,6 +63,14 @@ public class IntegerList extends List {
         return acc;
     }
 
+    public int getMax() {
+        int max = Integer.MIN_VALUE;
+        for (int num:list)
+            if (num > max)
+                max = num;
+        return max;
+    }
+
     /**
      * Returns a String representation of the IntegerList
      * @return a String
@@ -87,6 +95,7 @@ public class IntegerList extends List {
         System.out.println("Your list is " + list.toString());
         System.out.println("The sum is " + list.getSum());
         System.out.println("The product is " + list.getProduct());
+        System.out.println("The maximum is " + list.getMax());
 
     }
 }
