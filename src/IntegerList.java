@@ -41,6 +41,10 @@ public class IntegerList extends List {
         }
     }
 
+    public void add (int index, int value) {
+        list.add(index, value);
+    }
+
     /**
      * Get the sum of all the values in the IntegerList
      * @return the sum of the IntegerList
@@ -61,6 +65,18 @@ public class IntegerList extends List {
         for (int num:list)
             acc *= num;
         return acc;
+    }
+
+    /**
+     * Create a new IntegerList, which contains all the same values as the original list in opposite order
+     * @return a new IntegerList
+     */
+    public IntegerList getReverse() {
+        IntegerList newList = new IntegerList();
+        for (int num:list) {
+            newList.add(0,num);
+        }
+        return newList;
     }
 
     /**
