@@ -52,6 +52,10 @@ public class IntegerList extends List {
         return acc;
     }
 
+    /**
+     * Calculate the product of all the values in the IntegerList
+     * @return the product of all values in the list
+     */
     public int getProduct() {
         int acc = 1;
         for (int num:list)
@@ -67,6 +71,10 @@ public class IntegerList extends List {
         return list.toString();
     }
 
+    /**
+     * Main method: Allow the user to input their list, and demonstrate the various methods in IntegerList
+     * @param args currently unused
+     */
     public static void main(String[] args) {
         Scanner stdin = new Scanner(System.in);
         System.out.println("Enter a list of integers, followed by any letter");
